@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mods Shadow Fight 2 - Tiago Gameplay</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f1f1f1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-image: url('https://wallpapercave.com/wp/wp2396002.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      color: #ffcc00;
+      font-size: 3em;
+      text-shadow: 2px 2px #000;
+    }
+    p.subtitle {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+    .mods {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 20px;
+    }
+    .mod-link {
+      background-color: #1f1f1f;
+      padding: 15px 30px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      width: 90%;
+      max-width: 500px;
+      transition: all 0.3s;
+    }
+    .mod-link a {
+      text-decoration: none;
+      color: #00ffff;
+      font-size: 1.1em;
+    }
+    .mod-link:hover {
+      background-color: #292929;
+      transform: scale(1.02);
+    }
+    .v8-submenu {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .v8-submenu.active {
+      display: flex;
+    }
+    .submenu-link {
+      background-color: #292929;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #444;
+    }
+    .submenu-link a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+    .submenu-link a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 1em;
+      color: #aaa;
+    }
+    footer span {
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+      color: #ffcc00;
+    }
+  </style>
+  <script>
+    function toggleV8Menu() {
+      const submenu = document.getElementById('v8-submenu');
+      submenu.classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Tiago Gameplay - Mods Shadow Fight 2</h1>
+    <p class="subtitle">Preservando a jornada de um criador lendário</p>
+  </header>
+
+  <section class="mods">
+    <div class="mod-link"><a href="#" target="_blank">Download VIP V1</a></div>
+    <div class="mod-link"><a href="#" target="_blank">Download VIP V2</a></div>
+    <div class="mod-link"><a href="#" target="_blank">Download VIP V3</a></div>
+    <div class="mod-link"><a href="#" target="_blank">Download VIP V4</a></div>
+    <div class="mod-link"><a href="#" target="_blank">Download VIP V5</a></div>
+    <div class="mod-link"><a href="#" target="_blank">Download VIP V6</a></div>
+    <div class="mod-link"><a href="#" target="_blank">Download VIP V7</a></div>
+
+    <div class="mod-link" onclick="toggleV8Menu()" style="cursor: pointer;">
+      <a href="#">Download VIP V8</a>
+    </div>
+    <div class="v8-submenu" id="v8-submenu">
+      <div class="submenu-link"><a href="#" target="_blank">VIP V8</a></div>
+      <div class="submenu-link"><a href="#" target="_blank">VIP V8.1</a></div>
+      <div class="submenu-link"><a href="#" target="_blank">VIP V8.2</a></div>
+      <div class="submenu-link"><a href="#" target="_blank">VIP V8.3</a></div>
+      <div class="submenu-link"><a href="#" target="_blank">VIP V8.4</a></div>
+      <div class="submenu-link"><a href="#">VIP V8.5 - Em breve / Coming soon</a></div>
+    </div>
+  </section>
+
+  <footer>
+    Nada pode apagar aquilo que é feito com amor e dedicação.
+    <span>Nothing can erase what is made with love and dedication.</span>
+  </footer>
+</body>
+</html>
